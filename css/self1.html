@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px; /* Vertical spacing between rows */
+    }
+    .flex-container:last-child {
+      margin-bottom: 0; /* Remove bottom margin for the last container */
+    }
+    figure {
+      width: 160px;
+      height: 240px;
+      margin: 0 5px; /* Horizontal spacing between figures */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <figure>
+      <img src="./images/A.jpg" alt="sample 1">
+    </figure>
+    <figure>
+      <img src="./images/B.jpg" alt="sample 2">
+    </figure>
+    <figure>
+      <img src="./images/C.jpg" alt="sample 3">
+    </figure>
+  </div>
+  <div class="flex-container">
+    <figure>
+      <img src="./images/D.jpg" alt="sample 4">
+    </figure>
+    <figure>
+      <img src="./images/E.jpg" alt="sample 5">
+    </figure>
+    <figure>
+      <img src="./images/F.jpg" alt="sample 6">
+    </figure>
+  </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-box {
+            background-color: #ffffff; /* Background color of the box */
+            padding: 10px; /* Padding inside the box */
+            text-align: center; /* Center align text */
+            border: 2px solid #000; /* Black border */
+        }
+
+        button {
+            width: 174px;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 170px;
+            padding: 3px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        img {
+            width: 20px; 
+            height: auto; 
+            vertical-align: middle; 
+            margin-right: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <form>
+            <button type="button">
+                <img src="./images/google.jpg" alt="Google Icon"> Login with Google
+            </button>
+            <p class="align-justify">or</p>
+            <div>
+                <input type="text" id="id" name="id" placeholder="Username">
+            </div>
+            <div>
+                <input type="password" id="pw" name="pw" placeholder="Password">
+            </div>
+            <div>
+                <button type="submit">LOGIN</button>
+            </div>
+            <a href="#">Forgot your password?</a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring is Here!</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 공통 CSS */
+        body {
+            font-family: '맑은 고딕', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffd1dc, #ffe4e1);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h1, h2 {
+            color: #333;
+            font-weight: 700;
+        }
+        /* 시맨틱 태그 구분 위한 스타일 */
+        header, nav, aside, main, footer {
+            box-sizing: border-box;
+            padding: 20px;
+            margin: 10px 0;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* 컨테이너 스타일 */
+        #container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* 헤더 스타일 */
+        header {
+            width: 100%;
+            background-color: #ffb6c1;
+            color: white;
+            text-align: center;
+            background-image: url('https://i.imgur.com/7JXrHkD.jpg'); /* Sakura background */
+            background-size: cover;
+            background-position: center;
+            border: none;
+        }
+        header h1 {
+            margin: 0;
+            padding: 20px 0;
+            background: rgba(255, 182, 193, 0.8);
+            border-radius: 12px;
+        }
+        /* 내비게이션 스타일 */
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            background-color: #ffc1cc;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 25px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #ffb3ba;
+        }
+        /* 레이아웃 스타일 */
+        .content {
+            display: flex;
+            width: 100%;
+            margin-top: 20px;
+        }
+        /* 사이드바 스타일 */
+        aside {
+            width: 30%;
+            margin-right: 20px;
+        }
+        /* 메인 컨텐츠 스타일 */
+        main {
+            width: 70%;
+        }
+        /* 푸터 스타일 */
+        footer {
+            width: 100%;
+            text-align: center;
+            background-color: #ffb6c1;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+            background-image: url('https://i.imgur.com/A0KzJTr.jpg'); /* Sakura background */
+            background-size: cover;
+            background-position: center;
+            border: none;
+        }
+        .icon {
+            margin-right: 5px;
+        }
+        .sakura-image {
+            width: 70%;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Spring is Here!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home icon"></i>Home</a></li>
+                    <li><a href="#"><i class="fas fa-info icon"></i>About</a></li>
+                    <li><a href="#"><i class="fas fa-concierge-bell icon"></i>Service</a></li>
+                    <li><a href="#"><i class="fas fa-envelope icon"></i>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <aside>
+                <h2>사이드바</h2>
+                <p><strong>사쿠라 (Sakura)</strong> is the Japanese term for cherry blossom trees and their blossoms. These beautiful flowers bloom in the spring and are a significant part of Japanese culture.</p>
+                <img src="./images/Sakura.jpg" alt="Sakura Image" class="sakura-image">
+                <p>The tradition of <strong>hanami</strong> (flower viewing) involves gathering with friends and family to enjoy the transient beauty of cherry blossoms. This practice has been celebrated for centuries in Japan.</p>
+            </aside>
+
+            <main>
+                <h2>메인 컨텐츠</h2>
+                <p>The cherry blossom, or <strong>sakura</strong>, holds a special place in Japanese culture. It symbolizes the fleeting nature of life, as the beautiful blooms only last for a short time. This aligns with the Buddhist concept of impermanence.</p>
+                <img src="./images/Sakura.jpg" alt="Sakura Image" class="sakura-image">
+                <p>Every year, people across Japan eagerly await the cherry blossom forecast, which predicts when the sakura will be in full bloom. Popular hanami spots become crowded with people enjoying picnics under the cherry trees, often with bento boxes and sake.</p>
+                <p>Cherry blossoms are also a common motif in Japanese art, literature, and music. They appear in traditional and contemporary works, symbolizing beauty, renewal, and the ephemerality of life.</p>
+            </main>
+        </div>
+
+        <footer>
+            <h2>푸터</h2>
+            <p><strong>Sakura Blossom Tea</strong> is a delicacy enjoyed during the cherry blossom season. Made by steeping pickled cherry blossoms in hot water, it has a light, floral flavor and is often served at celebrations and special occasions to signify the arrival of spring.</p>
+        </footer>
+    </div>
+</body>
+</html>
